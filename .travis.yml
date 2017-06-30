@@ -1,3 +1,4 @@
 language: C
 complier: gcc
 script: make && make test
+install: true 
