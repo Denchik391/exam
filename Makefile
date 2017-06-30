@@ -9,9 +9,9 @@ build/quadratic_equation.o: src/quadratic_equation.c src/quadratic_equation.h
 build/main.o: src/main.c src/quadratic_equation.h
 	gcc -Wall -Werror -c src/main.c -o build/main.o -lm
 
-test: quadratic
+test: quadratic_equation_test
 
-quadratic: build/test/main.o build/test/quadratic_equation_test.o build/quadratic_equation.o
+quadratic_equation_test: build/test/main.o build/test/quadratic_equation_test.o build/quadratic_equation.o
 	gcc build/test/main.o build/test/quadratic_equation_test.o build/quadratic_equation.o -o bin/quadratic_equation_test -lm
 
 build/test/main.o: test/main.c
