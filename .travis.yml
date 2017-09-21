@@ -1,4 +1,4 @@
 language: C
 complier: gcc
-script: make && make test
+script: make && make test && bin/quadratic_equation_test
 install: true 
