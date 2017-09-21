@@ -20,7 +20,6 @@ build/test/main.o: test/main.c
 build/test/quadratic_equation_test.o: test/quadratic_equation_test.c
 	gcc -I src -I thirdparty -Wall -Werror -c test/quadratic_equation_test.c -o build/test/quadratic_equation_test.o -lm
 
-mkdir -p build/test
 
 clean:
 	rm -rf build/*.o bin/exam build/test/*.o bin/quadratic_equation_test
